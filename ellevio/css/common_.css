@@ -1,0 +1,518 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #1a1a1a;
+	overflow: scroll;
+	margin: 0 0 183px !important;
+}
+
+body#firstbody #header .right,
+body#commonbody #header .right {
+	text-align: right;
+	/*padding-top: 24px;*/
+	margin:0;
+}
+
+#header {
+	width: 100%;
+	padding: 20px 0 0 0;
+}
+
+#maindiv {
+	width: 100%;
+	padding: 10px 0 30px;
+}
+
+.left,
+.right {
+	width: 50%;
+	float: left;
+}
+
+.right {
+	margin-left: 8%;
+}
+
+#maindiv .left {
+	width: 50%;
+	padding: 10% 0 7%;
+}
+
+#maindiv .right {
+	width: 42%;
+	margin-left: 8%;
+}
+
+#loginLinksWrp {
+	padding: 20px 20px 10px;
+	box-sizing: border-box;
+	border: 1px solid #bbb;
+	margin-bottom: 14px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.dots {
+	list-style: disc;
+	padding: 0 25px;
+}
+
+ul.dotsalways {
+	list-style: disc;
+	padding-left: 25px;
+}
+
+li {
+	padding-bottom: 8px;
+}
+
+ul#loginLinks {
+	margin-bottom: 14px;
+}
+
+li.indexlist {
+	padding: 0px;
+	font-size: 18px;
+	position: relative;
+	left: 0;
+	margin-bottom: 5px;
+}
+
+li.indexlist a {
+	padding: 11px 25px 11px 15px;
+	display: block;
+	font-size: 14px;
+	background: #fff url(/images/arrow_right.png) right 50% no-repeat;
+	border: 1px solid #bbb;
+}
+
+li.indexlist a:hover {
+	background: #f9f9f9 url(/images/arrow_right.png) right 50% no-repeat;
+	border-bottom: 1px solid #999;
+}
+
+li.indexlist.single {
+	width: 50%;
+}
+
+table.phonetable {
+	border: 1px solid #bbb;
+	border-spacing: 0;
+	border-radius: 5px;
+	max-width: 450px;
+	width: 100%;
+}
+
+table.phonetable td {
+	border-top: 1px solid #bbb;
+	padding: 7px 12px;
+}
+
+table.phonetable tr td:first-child {
+	text-align: left;
+}
+
+table.phonetable tr:first-child td {
+	border-top: none;
+	border-radius: 5px 5px 0 0;
+}
+
+table.phonetable tr:first-child td.border.noborder {
+	border-radius: 5px 0 0 0;
+}
+
+table.phonetable tr:first-child td.border {
+	border-radius: 0 5px 0 0;
+}
+
+
+table.phonetable td.border {
+	border-right: 1px solid #bbb;
+}
+
+a {
+	text-decoration: none;
+	color: #2f95b7;
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+a.active {
+	color: #000 !important;
+}
+
+a.icon {
+	background: url(/images/externallinknewwindow.png) right 4px no-repeat;
+	padding-right: 18px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 14px;
+	line-height: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h2.sub {
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #222;
+}
+
+.errortxt {
+	color: red;
+	margin-top: 10px;
+	display: block;
+}
+
+.allborder {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.bordertopbottom {
+	border-bottom: 1px solid #7a7a7a;
+	border-top: 1px solid #bbb;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.bordertopbottom span {
+	color: #25aae6;
+}
+
+#curve {
+	display: block;
+}
+
+#curve img,
+#curve_mobile img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+#curve_mobile {
+	display: none;
+}
+
+input[type=text] {
+	width: 200px;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #7a7a7a;
+	border-radius: 3px;
+	padding: 5px 5px;
+	height: 22px;
+}
+
+
+/*
+input[type="submit"] {
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #7a7a7a;
+	padding: 8px 14px;
+	margin: 0;
+	border-radius: 3px;
+	background: #fff;
+}
+
+input[type="submit"]:hover {
+	background: #f5f5f5;
+	cursor: pointer;
+}
+*/
+
+#startBtn {
+	text-align: center;
+}
+
+#footer {
+	width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*height: 83px;*/
+}
+
+#footer .left {
+	width: 50%;
+}
+
+#footer .right {
+	width: 42%;
+}
+
+#footertop a {
+	margin-bottom: 6px;
+	display: block;
+}
+
+#footer h3 {
+	font-weight: normal;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#footertop,
+#footerbot {
+	width: 100%;
+	background: #f5f5f5;
+	padding: 22px 0;
+	border-top: 1px solid #ddd;
+}
+
+#footerbot {
+	background: #ddd;
+	border-top: none;
+	font-size: 13px;
+	text-align: center;
+}
+
+#footerbot a {
+	color: #1a1a1a;
+}
+
+#footerbot .inner span {
+	font-family: "Open Sans SemiBold";
+	margin-right: 5px;
+}
+
+.inner {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.clearFloat{
+	height: 1px;
+	width: 100%;
+	clear: both;
+}
+
+.desktop {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+
+@media all and (max-width: 700px) {
+
+	#maindiv .left {
+		
+	}
+
+	#maindiv .right {
+		margin-left: 8%;
+	}
+
+	#curve {
+		display: none;
+	}
+
+	#curve_mobile {
+		display: block;
+	}
+
+	.inner {
+		padding: 0 20px;
+	}
+
+}
+
+@media all and (max-width: 650px) {
+
+	.inner {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+}
+
+@media all and (max-width: 480px) {
+
+	body {
+		margin: 0 0 294px !important;
+	}
+
+	#header img {
+		width: 150px;
+	}
+
+	#header .left,
+	#header .right {
+		width: 39%;
+		float: left;
+	}
+
+	#header .right {
+		margin-left: 11%;
+	}
+
+	body#firstbody #header .left,
+	body#commonbody #header .left {
+		width: 47%;
+	}
+
+	body#firstbody #header .right,
+	body#commonbody #header .right {
+		width: 47%;
+		margin-left: 6%;
+		padding-top: 12px;
+	}
+
+	.left {
+		width: 100%
+	}
+
+	.right {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#maindiv {
+		padding: 20px 0 50px;
+	}
+
+	#maindiv .left {
+		width: 100%;
+		padding: 0;
+	}
+
+	#maindiv .right {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.inner {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	h2.sub {
+		font-size: 14px;
+	}
+
+	ul.dots {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	ul.dots li {
+		border-bottom: 1px solid #bbb;
+	}
+
+	ul.dots li:first-child {
+		border-top: 1px solid #bbb;
+	}
+
+	ul.dots li a {
+		padding: 5px 5px;
+		display: block;
+	}
+
+	table.phonetable {
+		border: none;
+	}
+
+	table.phonetable td {
+		color: #25aae6;
+	}
+
+	table.phonetable tr td:first-child {
+		color: #1a1a1a;
+	}
+
+	table.phonetable td.border {
+		border-right: none;
+	}
+
+	.allborder {
+		border-bottom: 1px solid #bbb;
+		display: block;
+		padding: 7px 0;
+		margin-bottom: 0;
+	}
+
+	.allborder:first-child {
+		border-top: 1px solid #bbb;
+	}
+
+	#footer {
+		height: 294px;
+	}
+
+	#footertop .left {
+		margin-bottom: 20px;
+	}
+
+	#footertop a {
+		display: block;
+	}
+
+	#footer .left,
+	#footer .right {
+		width: 100%;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	h1.mobile {
+		text-align: center;
+		margin-bottom: 3px;
+	}
+
+}

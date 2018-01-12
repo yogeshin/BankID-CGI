@@ -1,0 +1,128 @@
+PARM{include:/include/head.html?title=text-grp-header-telia}
+<!-- Page used for GRP same device Poll -->
+PARM{meta-header}
+<!-- Static meta-header: <meta http-equiv="Content-type" content="PARM{mbi-poll-time};url=PARM{poll-url}"> -->
+<style>
+    .wordwrap { 
+        white-space: pre-wrap;      /* CSS3 */   
+        white-space: -moz-pre-wrap; /* Firefox */    
+        white-space: -pre-wrap;     /* Opera <7 */   
+        white-space: -o-pre-wrap;   /* Opera 7 */    
+        word-wrap: break-word;      /* IE */
+
+ /*    text-align:left;
+   display:inline-block;*/
+    }
+</style>
+<script type="text/javascript" src="/mg-local/poll.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+    function handleResponse(transport) {
+        var respStr = transport.responseText;
+        try {
+            var respJSON = JSON.parse(transport.responseText);
+            if (respIsOk(respJSON)) {
+                var infoText = document.getElementById('infotext');
+                document.getElementById('infotext').innerHTML = respJSON.infotext;
+                if (respJSON.location != "") {
+                    document.location = respJSON.location;
+                } else {
+                    var interval = 3000;
+                    if (respJSON.pollinterval > 10) {
+                        interval = respJSON.pollinterval;
+                    }
+
+                    setTimeout("fetch_status()", interval);
+                }
+            } else {
+                handleRequestError();
+            }
+        } catch (err) {
+            handleRequestError();
+        }
+    }
+    function handleRequestError() {
+        document.getElementById('nojavascript').style.display = '';
+    }
+
+    function respIsOk(respJSON) {
+        return !(respJSON == null || respJSON.location == null || respJSON.infotext == null);
+    }
+
+    function fetch_status() {
+        AjaxRequest.get(
+          {
+            'url':'pollstatus'
+            ,'onSuccess': handleResponse
+            ,'onError': handleRequestError
+          }
+        );
+    }
+    function polling_start() {
+        document.getElementById('nojavascript').style.display = 'none';
+        setTimeout(function () { try { document.getElementById('manualstart').style.display = ''; } catch (e) { }}, 5000);
+        // Start polling..
+        setTimeout("fetch_status()", 10000);
+    }
+
+</script>
+</head>
+<body id="commonbody" onload="polling_start()">
+
+PARM{include:/include/normalheader.html?topheading=text-grp-header-telia?dialogheading=text-grp-header-telia}
+
+    <table>
+        <tr>
+            <td colspan=4 align=center>
+                <div class="centeredleftouter"><div id="infotext" class="wordwrap">PARM{message}</div></div><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td align=center colspan=4>
+                <img src="/mg-local/mg-gfx/rotation.gif" alt="In progress-icon">
+            </td>
+        </tr>
+    </table>
+    <table id='nojavascript'>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align=center colspan=4>
+                PARM{text-automaticupdate}<br><br>
+            </td>
+        </tr>
+        <tr>
+            <td align=center colspan=4>
+                <a class='button' href="/mg-localPARM{refresh}">PARM{text-update}</a>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                &nbsp;
+	    </td>
+	</tr>
+    <tr>
+        <td align=center id="manualstart" style="PARM{grp-visibility-manual-link}" colspan=4>
+            <!--<a class='button' href="PARM{grp-schema}autostarttoken=PARM{autostarttoken}&redirect=PARM{redirect}">PARM{text-rfa18}</a> -->
+            <a class='button' href="PARM{grp-link}">PARM{text-grp-rfa18}</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td align=center colspan=4>
+            <a href="/">PARM{text-clickhereformainpage}</a>
+            <iframe src="PARM{grp-link}" height=0 width=0></iframe>
+        </td>
+    </tr>
+</table>
+    <br>
+
+PARM{include:/include/normalfooter.html?topheading=text-grp-header-telia?dialogheading=text-grp-header-telia}

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+<body bgcolor="#FFFFFF" onload="document.forms['form-redirect'].submit();">
+    <br>
+    <br>
+    <center>
+    <font color=#598297 size=3>
+        PARM{text-logica-redirectto}<br/><br/>
+        <noscript>PARM{text-logica-redirectto2}<br/><br/> </noscript>
+
+        <form name="form-redirect" action="PARM{action}" method="post">
+            <div>
+                <textarea rows="10" cols="80" name="PARM{type}" style="display:none">PARM{value}</textarea>
+                <textarea rows="10" cols="80" name="RelayState" style="display:none">PARM{relay_state}</textarea>
+                <noscript><button type="submit">PARM{text-next}</button> </noscript>
+            </div>
+        </form>
+    </font>
+    </center>
+</body>
+</html>
+

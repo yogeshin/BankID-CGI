@@ -1,0 +1,103 @@
+PARM{include:/include/head.html?title=text-grp-header-mobile-telia}
+<!-- Page used for GRP Authentication Poll -->
+PARM{meta-header}
+<!-- Static meta-header: <meta http-equiv="Content-type" content="PARM{mbi-poll-time};url=PARM{poll-url}"> -->
+<script type="text/javascript" src="/mg-local/poll.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+    function handleResponse(transport) {
+        var respStr = transport.responseText;
+        try {
+            var respJSON = JSON.parse(transport.responseText);
+            if (respIsOk(respJSON)) {
+                var infoText = document.getElementById('infotext');
+                document.getElementById('infotext').innerHTML = respJSON.infotext;
+                if (respJSON.location != "") {
+                    document.location = respJSON.location;
+                } else {
+                    var interval = 3000;
+                    if (respJSON.pollinterval > 10) {
+                        interval = respJSON.pollinterval;
+                    }
+
+                    setTimeout("fetch_status()", interval);
+                }
+            } else {
+                handleRequestError();
+            }
+        } catch (err) {
+            handleRequestError();
+        }
+    }
+    function handleRequestError() {
+        document.getElementById('nojavascript').style.display = '';
+    }
+
+    function respIsOk(respJSON) {
+        return !(respJSON == null || respJSON.location == null || respJSON.infotext == null);
+    }
+
+    function fetch_status() {
+        AjaxRequest.get(
+          {
+            'url':'pollstatus'
+            ,'onSuccess': handleResponse
+            ,'onError': handleRequestError
+          }
+        );
+    }
+    function polling_start() {
+        document.getElementById('nojavascript').style.display = 'none';
+        // Start polling..
+        setTimeout("fetch_status()", 10000);
+    }
+
+</script>
+</head>
+<body id="commonbody" onload="polling_start()">
+
+PARM{include:/include/normalheader.html?topheading=text-grp-header-mobile-telia?dialogheading=text-grp-header-mobile-telia}
+
+    <table>
+        <tr>
+            <td align=center>
+                <div class="centeredleftouter"><div id="infotext" class="centeredleftinner">PARM{message}</div></div><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+                <img src="/mg-local/mg-gfx/rotation.gif" alt="In progress-icon">
+            </td>
+        </tr>
+    </table>
+    <table id='nojavascript'>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+                PARM{text-automaticupdate}<br><br>
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+                <a class='button' href="/mg-localPARM{refresh}">PARM{text-update}</a>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                &nbsp;
+	    </td>
+	</tr>
+    <tr>
+        <td align=center>
+            <a href="/">PARM{text-clickhereformainpage}</a>
+        </td>
+    </tr>
+    </table>
+<br>
+
+PARM{include:/include/normalfooter.html?topheading=text-grp-header-mobile-telia?dialogheading=text-grp-header-mobile-telia}

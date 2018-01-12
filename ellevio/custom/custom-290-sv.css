@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Dölj header med tillbaka/avbryt och språkval */
+/* #header {
+	display:none;
+}
+ */
+ 
+/* Dölj footer */
+/* #footer {
+	display:none;
+} */
+
+/* Ta bort avstånd ovanför och under inloggningsbox */ 
+/* #maindiv .inner {
+    padding: 0 5px;
+} */
+
+/* Lägg till text i footertop */
+#footertop_left:after {
+	content: 'Text här!';
+}
+
+/* Logga in rubrik */
+.custom-message-title:after {
+  content: 'Logga in till oss!!';
+}
+
+/* Informationstext under "Logga in" */
+.custom-message:after {
+  content: 'Exempeltext för information.';
+}
+
+.custom-ssn-text:after {
+  content: 'Personnummer (ÅÅÅÅMMDDXXXX)';
+}
+

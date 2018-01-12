@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.lang-sv {
+	display:none;
+}
+
+.custom-message:after {
+  content: 'CGI är leverantör av säker inloggning.';
+}
+
+.custom-method-title:after {
+  content: 'Välj inloggningsmetod.';
+}
+
+/* header Back to / start page */
+.custom-header-home:after {
+  content: 'Hem';
+}
+/* header SAML fail / Back to SP */
+.custom-header-cancel:after {
+  content: 'Avbryt';
+}
+
+/* header Back to login-page-url */
+.custom-header-login-page:after {
+  content: 'Tillbaka';
+}
+
+/* header Back to / start page */
+.custom-grp_enter-home:after {
+  content: 'Hem';
+}
+/* header SAML fail / Back to SP */
+.custom-grp_enter-cancel:after {
+  content: 'Avbryt';
+}
+
+/* header Back to login-page-url */
+.custom-grp_enter-login-page:after {
+  content: 'Tillbaka';
+}
+
+/* header Back to / start page */
+.custom-grp_poll-home:after {
+  content: 'Hem';
+}
+/* header SAML fail / Back to SP */
+.custom-grp_poll-cancel:after {
+  content: 'Avbryt';
+}
+
+/* header Back to login-page-url */
+.custom-grp_poll-login-page:after {
+  content: 'Tillbaka';
+}
+
+.custom-message-title:after {
+  content: 'Logga in.';
+}
+
+.custom-enter-ssn-title:after {
+  content: 'BankID på annan enhet';
+}
+
+.no-links .shortcuts{display:none}
+
+.custom-contact-support-1:after {
+content: 'Det finns flera utgivare av e-legitimationer och det vanligaste sättet är att du kontaktar din bank. Har du Internetbank så kan du enkelt skaffa en e-legitimation på fil till din dator, men det finns också e-legitimation på kort och vissa utgivare kan även erbjuda e-legitimation i mobiltelefon.';
+} 
+.custom-contact-support-2:after {
+content: 'För att kunna skaffa en Svensk e-legitimation måste du ha ett svenskt personnummer samt vara folkbokförd i Sverige. Är du inte folkbokförd i Sverige, så är det krångligare och du får prata med din bank.';
+} 
+.custom-contact-support-3:after {
+content: 'Är du under 18-år så krävs målsmans medgivande och du måste besöka ditt bankkontor eller Skatteverkets servicekontor tillsammans med målsman för att skaffa en e-legitimation. Har du skyddad identitet så behöver du också besöka ditt bankkontor eller Skatteverkets servicekontor för att skaffa en e-legitimation';
+} 
+.custom-contact-support-4:after {
+content: 'Olika utgivare av e-legitimation kan ha olika avgifter. E-legitimation på fil är oftast gratis att skaffa, medan e-legitimation på kort normalt kostar pengar och kan även utgöra fysisk ID-handling.';
+} 
+.custom-contact-support:after {
+content: 'Kontakt & support';
+} 
+.custom-sparra-1:after {
+content: 'Att spärra sin e-legitimation';
+} 
+.custom-sparra-2:after {
+content: 'En e-legitimation är en personlig ID-handling som du skall förvara säkert och hålla din privata PIN-kod hemlig. Men om du misstänker att någon obehörig kan ha kommit åt din e-legitimation, eller du blivit av med din e-legitimation, är det viktigt att du omedelbart spärrar e-legitimationen så att den inte längre kan användas.';
+} 
+.custom-sparra-3:after {
+content: 'Har du e-legitimation på fil, kan du normalt själv spärra e-legitimationen via din Internetbank, men kommer du inte åt Internetbanken eller har e-legitimation på kort, så måste du ringa din utgivare och spärra din e-legitimation';
+}
+.custom-sparra-4:after {
+content: 'Ett stulet eller borttappat ID-kort skall du även polisanmäla. Ring 114 14 eller gör en elektronisk anmälan hos ';
+} 
+.custom-testa-1:after {
+content: 'Testa din e-legitimation';
+} 
+.custom-testa-2:after {
+content: 'Det är din utgivare av e-legitimation som skall ge dig support och hjälp med den programvara som behövs i din dator.  På följande länkar kan du testa din e-legitimation och även installera/uppdatera den säkerhetsprogramvara som behövs om du saknar den. ';
+} 
+.custom-testa-3:after {
+content: 'Testa BankID och Nordea e-legitimation';
+} 
+.custom-testa-4:after {
+content: 'Testa e-legitimation frå';
+} 
+.custom-testa-5:after {
+content: 'Här kan du installera BankID Säkerhetsprogramvara (Även för Nordea e-legitimation)';
+} 
+.custom-testa-6:after {
+content: 'Här kan du installera BankID Säkerhetsprogramvara för Nordea';
+} 
+.custom-testa-7:after {
+content: 'Här kan du installera Net iD';
+} 
+.custom-testa-8:after {
+content: 'Får du det inte att fungera, så skall du kontakta din utgivare för support. Om din e-legitimation fungerar på testsidan, så är det antagligen fel på själva e-tjänsten som du försöker använda.  Kontakta då den myndighet eller företag som har e-tjänsten.';
+} 
+.custom-vad-1:after {
+content: 'Vad är en e-legitimation';
+} 
+.custom-vad-2:after {
+content: 'En e-legitimation är en elektronisk ID-handling som du kan använda för att på ett säkert sätt identifiera dig på Internet, på motsvarande sätt som du använder ett körkort eller vanligt ID-kort för att identifiera dig.';
+} 
+.custom-vad-3:after {
+content: 'En e-legitimation kan även användas för att skriva under dokument elektroniskt via Internet och är lika juridiskt bindande som om du med en penna skulle ha skrivit under dokumentet med en vanlig namnteckning.';
+} 
+.custom-vad-4:after {
+content: 'En e-legitimation kan antingen vara en fil på din dator eller på ett speciellt kort, så kallat smartcard.  Det finns även möjlighet att ha en e-legitimation i en mobiltelefon.';
+} 
+.custom-vad-5:after {
+content: 'Att använda en e-legitimation gör det enklare för dig att utföra olika tjänster hos många olika myndigheter, kommuner och företag över Internet.';
+} 
+.custom-support-1:after {
+content: 'Var får jag support?';
+} 
+.custom-support-2:after {
+content: 'Om du har problem som rör din e-legitimation, så är det din utgivare av e-legitimationen som du skall kontakta för hjälp, vilket vanligtvis är din bank. Om du redan har en e-legitimation men inte får den att fungera på. Testa din e-legitimation" så kan du om du har e-legitimation på fil pröva att skaffa en ny e-legitimation från din Internetbank, men glöm inte att samtidigt även spärra den gamla.';
+} 
+.custom-support-3:after {
+content: 'Om det är så att din e-legitimation fungerar på testsidan, men att den e-tjänst du försöker använda inte fungerar, då skall du kontakta den myndighet eller företag som har själva e-tjänsten.';
+} 
+.custom-support-4:after {
+content: 'Här kan du kontakta respektive utgivare för vidare support:';
+}
+ 
+
+
+.custom-cookieinfo:after {
+content: 'Information om kakor';
+}
+.custom-kakor-1:after {
+content: 'Kakor';
+}
+.custom-kakor-2:after {
+content: 'Den här webbsidan för inloggning med e-legitimation innehåller två så kallade kakor (cookies). En kaka är en liten textfil som webbsidan begär att få spara på din dator för att möjliggöra automatisk inloggning i olika e-tjänster under 60 minuter efter det du identifierat dig med en e-legitimation.';
+}
+.custom-kakor-3:after {
+content: 'Den ena kakan är en sessionskaka som innehåller ett unikt slumptal för att identifiera just din inloggning och försvinner när webbläsaren stängs av.';
+}
+.custom-kakor-4:after {
+content: 'Den andra kakan innehåller information om vilken av servrarna på vår webbplats som hanterade din inloggning och den kakan finns kvar i webbläsaren även efter omstart.';
+}
+.custom-kakor-5:after {
+content: 'Dessa två kakor behövs för att på ett säkert sätt låta dig komma åt olika e-tjänster som en inloggad och identifierad användare. Kakorna i sig innehåller inga personliga uppgifter och används inte av någon annan.';
+}
+.custom-kakor-6:after {
+content: 'Undvika kakor';
+}
+.custom-kakor-7:after {
+content: 'Vill du inte acceptera kakor kan din webbläsare ställas in så att du automatiskt nekar till lagring av kakor eller informeras varje gång en webbplats begär att få lagra en kaka. Genom webbläsaren kan också tidigare lagrade kakor raderas. Se webbläsarens hjälpsidor för mer information.';
+}
+.custom-kakor-8:after {
+content: 'Väljer du att inte acceptera kakor så kan du inte identifiera dig med e-legitimation i denna e-tjänst.';
+}
+.custom-kakor-9:after {
+content: 'Mer information om kakor kan du finna på ';
+}
+.custom-kakor-10:after {
+content: 'Kommunikationsmyndigheten PTS sida om kakor';
+}
